@@ -1,0 +1,100 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookSwap | Entrar</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body
+  class="pagina-autenticacao"
+  data-pagina="login"
+  data-no-shell="true"
+>
+  <main class="estrutura-autenticacao">
+
+    <section
+      class="arte-autenticacao"
+      style="background-image: url('img/folders/historia.jpg');"
+    >
+      <blockquote>
+        "A simplicidade é a chave de toda verdadeira elegância."
+      </blockquote>
+    </section>
+
+    <section class="painel-autenticacao">
+
+      <p class="marca-autenticacao">
+        BOOKSWAP
+      </p>
+
+      <h1>Bem-vindo</h1>
+
+      <p class="rotulo" style="text-align: center;">
+        Entre com suas informações abaixo
+      </p>
+
+      <form data-login-form>
+
+        <div class="campo">
+          <label for="login-email">E-mail</label>
+
+          <input
+            id="login-email"
+            name="email"
+            type="email"
+            placeholder="nome@exemplo.com"
+            required
+          >
+        </div>
+
+        <div class="campo">
+          <label for="login-senha">Senha</label>
+
+          <input
+            id="login-senha"
+            name="senha"
+            type="password"
+            placeholder="********"
+            required
+          >
+        </div>
+
+        <p
+          class="mensagem-status"
+          data-auth-mensagem
+        ></p>
+
+        <button
+          class="botao botao--inteiro"
+          type="submit"
+        >
+          Entrar
+        </button>
+
+      </form>
+
+      <p class="alternativa-autenticacao">
+        Ainda não possui uma conta?
+        <br>
+
+        <a href="register.html">
+          Criar conta
+        </a>
+
+        <br>
+
+        <a href="index.html">
+          Voltar para o início
+        </a>
+      </p>
+
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

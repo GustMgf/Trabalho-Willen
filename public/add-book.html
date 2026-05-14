@@ -1,0 +1,87 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookSwap | Adicionar Livro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="add-book">
+  <div data-shell="header"></div>
+
+  <main class="pagina">
+    <section class="cabecalho-pagina">
+      <p class="rotulo">BookSwap</p>
+      <h1 class="titulo-destaque">Adicionar Novo Livro</h1>
+      <p class="texto-suave">Curadoria pessoal. Complete os detalhes abaixo para catalogar sua proxima troca.</p>
+    </section>
+
+    <section class="layout-adicionar-livro">
+      <label class="upload-capa">
+        <input type="file" accept="image/*" data-upload-capa>
+        <span>
+          <span class="upload-capa__icone"></span>
+          <span data-cover-file-name>Upload da capa</span>
+        </span>
+      </label>
+
+      <form data-add-book-form>
+        <div class="grade-formulario">
+          <div class="campo">
+            <label for="livro-titulo">Título do livro</label>
+            <input id="livro-titulo" name="titulo" placeholder="Ex: O Alquimista" required>
+          </div>
+          <div class="campo">
+            <label for="livro-autor">Autor</label>
+            <input id="livro-autor" name="autor" placeholder="Ex: Paulo Coelho" required>
+          </div>
+          <div class="campo ocupa-2">
+            <label for="livro-genero">Gênero</label>
+            <input id="livro-genero" name="genero" placeholder="Ex: Ficção" required>
+          </div>
+          <div class="campo ocupa-2">
+            <span class="rotulo-formulario">Condicao do exemplar</span>
+            <div class="linha-radio">
+              <label class="opcao-radio"><input type="radio" name="condicao" value="Otimo" required> Ótimo</label>
+              <label class="opcao-radio"><input type="radio" name="condicao" value="Bom" checked> Bom</label>
+              <label class="opcao-radio"><input type="radio" name="condicao" value="Regular"> Regular</label>
+            </div>
+          </div>
+          <div class="campo ocupa-2">
+            <label for="livro-descricao">Descrição</label>
+            <textarea id="livro-descricao" name="descricao" placeholder="Detalhe marcas, edição ou observações." required></textarea>
+          </div>
+          <div class="campo ocupa-2">
+            <span class="rotulo-formulario">Status inicial</span>
+            <div class="linha-radio">
+              <label class="opcao-radio"><input type="radio" name="status" value="disponivel" checked> Disponível</label>
+              <label class="opcao-radio"><input type="radio" name="status" value="reservado"> Reservado</label>
+              <label class="opcao-radio"><input type="radio" name="status" value="trocado"> Trocado</label>
+            </div>
+          </div>
+        </div>
+        <p class="mensagem-status" data-add-book-mensagem></p>
+        <button class="botao botao--inteiro" type="submit">Salvar no acervo</button>
+      </form>
+    </section>
+  </main>
+
+  <div class="modal" data-book-added-modal>
+    <div class="cartao-modal">
+      <button class="fechar-modal" type="button" data-close-added-modal aria-label="Fechar">&times;</button>
+      <span class="marca-sucesso"></span>
+      <h2>Livro Adicionado</h2>
+      <p class="texto-suave">O livro <strong data-added-title></strong> foi adicionado com sucesso ao seu acervo.</p>
+      <a class="botao botao--inteiro" href="my-books.html">Ver no acervo</a>
+      <button class="botao botao--vazado botao--inteiro" type="button" data-close-added-modal>Continuar adicionando</button>
+    </div>
+  </div>
+
+  <div data-shell="navegacao-inferior"></div>
+  <script src="js/api.js"></script>
+  <script src="js/books.js"></script>
+</body>
+</html>
+
+
+

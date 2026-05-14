@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "title": "Harry Potter",
+    "author": "J.K. Rowling",
+    "genre": "Fantasia"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "title": "O Hobbit",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasia"
+  },
+  {
+    "id": 3,
+    "userId": 3,
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "Distopia"
+  }
+]

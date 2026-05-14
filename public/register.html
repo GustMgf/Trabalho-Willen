@@ -1,0 +1,132 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookSwap | Cadastro</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body
+  class="pagina-autenticacao"
+  data-pagina="register"
+  data-no-shell="true"
+>
+  <main class="estrutura-autenticacao">
+
+    <section
+      class="arte-autenticacao"
+      style="background-image: url('img/folders/composicao.webp');"
+    >
+      <blockquote>
+        "Toda biblioteca começa com um primeiro livro compartilhado."
+      </blockquote>
+    </section>
+
+    <section class="painel-autenticacao">
+
+      <p class="marca-autenticacao">
+        BOOKSWAP
+      </p>
+
+      <h1>Criar conta</h1>
+
+      <p class="rotulo" style="text-align: center;">
+        Faça parte da comunidade de leitores
+      </p>
+
+      <form data-register-form>
+
+        <div class="grade-formulario">
+
+          <div class="campo ocupa-2">
+            <label for="cadastro-nome">Nome</label>
+
+            <input
+              id="cadastro-nome"
+              name="nome"
+              placeholder="Seu nome"
+              required
+            >
+          </div>
+
+          <div class="campo ocupa-2">
+            <label for="cadastro-email">E-mail</label>
+
+            <input
+              id="cadastro-email"
+              name="email"
+              type="email"
+              placeholder="nome@exemplo.com"
+              required
+            >
+          </div>
+
+          <div class="campo ocupa-2">
+            <label for="cadastro-senha">Senha</label>
+
+            <input
+              id="cadastro-senha"
+              name="senha"
+              type="password"
+              placeholder="********"
+              required
+            >
+          </div>
+
+          <div class="campo">
+            <label for="cadastro-cidade">Cidade</label>
+
+            <input
+              id="cadastro-cidade"
+              name="cidade"
+              placeholder="Lages"
+              required
+            >
+          </div>
+
+          <div class="campo">
+            <label for="cadastro-estado">Estado</label>
+
+            <input
+              id="cadastro-estado"
+              name="estado"
+              placeholder="SC"
+              maxlength="2"
+              required
+            >
+          </div>
+
+        </div>
+
+        <p
+          class="mensagem-status"
+          data-auth-mensagem
+        ></p>
+
+        <button
+          class="botao botao--inteiro"
+          type="submit"
+        >
+          Criar conta
+        </button>
+
+      </form>
+
+      <p class="alternativa-autenticacao">
+        Já possui uma conta?
+        <br>
+
+        <a href="login.html">
+          Entrar
+        </a>
+      </p>
+
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

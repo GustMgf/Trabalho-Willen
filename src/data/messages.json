@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "tradeId": 1,
+    "senderId": 1,
+    "content": "Ola, aceita trocar?",
+    "createdAt": "2026-04-30T12:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "tradeId": 2,
+    "senderId": 5,
+    "content": "Oi",
+    "createdAt": "2026-04-30T18:12:12.915Z"
+  },
+  {
+    "id": 3,
+    "tradeId": 2,
+    "senderId": 5,
+    "content": "Safada",
+    "createdAt": "2026-04-30T18:12:15.372Z"
+  },
+  {
+    "id": 4,
+    "tradeId": 2,
+    "senderId": 5,
+    "content": "Bora trocar um livro",
+    "createdAt": "2026-04-30T18:12:25.175Z"
+  }
+]

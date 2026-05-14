@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookSwap | Meu Acervo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="my-books">
+  <div data-shell="header"></div>
+
+  <main class="pagina pagina--larga">
+    <section class="cabecalho-pagina cabecalho-pagina--centralizado">
+      <p class="rotulo">Meu acervo</p>
+      <h1 class="titulo-destaque">Meu Acervo</h1>
+      <p class="rotulo" data-my-books-count>Carregando volumes</p>
+    </section>
+
+    <div class="barra-ferramentas">
+      <div>
+        <label class="rotulo-formulario" for="busca-meu-livro">Procurar em sua colecao</label>
+        <input id="busca-meu-livro" class="campo-busca" data-my-book-search placeholder="Titulo, autor ou genero...">
+      </div>
+      <a class="botao" href="add-book.html">+ Adicionar livro</a>
+    </div>
+
+    <section class="grade-livros grade-livros--tres" data-my-books-grid></section>
+  </main>
+
+  <div data-shell="navegacao-inferior"></div>
+  <script src="js/api.js"></script>
+  <script src="js/books.js"></script>
+</body>
+</html>
+
+
+

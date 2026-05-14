@@ -1,0 +1,25 @@
+{
+  "name": "bookswap",
+  "version": "1.0.0",
+  "description": "API REST do BookSwap para troca de livros.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "bookswap",
+    "express",
+    "api",
+    "rest"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "mysql2": "^3.22.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

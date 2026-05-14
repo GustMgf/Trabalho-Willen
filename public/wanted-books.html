@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookSwap | Desejos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="wanted-books">
+  <div data-shell="header"></div>
+
+  <main class="pagina pagina--larga">
+    <section class="cabecalho-pagina">
+      <p class="rotulo">Lista de desejos</p>
+      <h1 class="titulo-destaque">Livros Desejados</h1>
+      <p class="texto-suave">Cadastre interesses para alimentar as combinações automaticas.</p>
+    </section>
+
+    <form class="barra-ferramentas" data-wanted-form>
+      <div class="grade-formulario">
+        <div class="campo">
+          <label for="desejo-titulo">Título</label>
+          <input id="desejo-titulo" name="titulo" placeholder="Ex: Harry Potter" required>
+        </div>
+        <div class="campo">
+          <label for="desejo-autor">Autor</label>
+          <input id="desejo-autor" name="autor" placeholder="Ex: J.K. Rowling" required>
+        </div>
+        <div class="campo ocupa-2">
+          <label for="desejo-genero">Gênero</label>
+          <input id="desejo-genero" name="genero" placeholder="Fantasia" required>
+        </div>
+        <p class="mensagem-status ocupa-2" data-wanted-mensagem></p>
+      </div>
+      <div class="acoes-linha acoes-linha--vertical">
+        <button class="botao" type="submit" data-wanted-submit>Adicionar desejo</button>
+        <button class="botao botao--vazado" type="button" data-cancel-wanted-edit hidden>Cancelar edição</button>
+      </div>
+    </form>
+
+    <section class="lista-desejos" data-wanted-list></section>
+  </main>
+
+  <div data-shell="navegacao-inferior"></div>
+  <script src="js/api.js"></script>
+  <script src="js/books.js"></script>
+</body>
+</html>
+
+

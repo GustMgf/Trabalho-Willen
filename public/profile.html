@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookSwap | Perfil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="profile">
+  <div data-shell="header"></div>
+
+  <main class="pagina pagina--larga">
+    <section class="perfil-hero">
+      <div class="perfil-avatar" aria-label="Foto de perfil">
+        <img data-profile-photo alt="Foto de perfil" hidden>
+        <span data-profile-initials>BS</span>
+      </div>
+
+      <div class="perfil-hero__texto">
+        <p class="rotulo">Meu perfil</p>
+        <h1 class="titulo-secao" data-profile-title>Perfil</h1>
+        <p class="texto-suave" data-profile-location>Carregando informacoes do perfil...</p>
+      </div>
+
+      <div class="perfil-hero__acoes">
+        <a class="botao botao--vazado" href="my-books.html">Meu acervo</a>
+        <button class="botao" type="button" data-logout-profile>Sair</button>
+      </div>
+    </section>
+
+    <section class="perfil-grid">
+      <aside class="perfil-painel perfil-painel--resumo">
+        <p class="rotulo">Resumo</p>
+        <dl class="perfil-dados">
+          <div>
+            <dt>Nome</dt>
+            <dd data-profile-name>-</dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd data-profile-email>-</dd>
+          </div>
+          <div>
+            <dt>Localizacao</dt>
+            <dd data-profile-place>-</dd>
+          </div>
+          <div>
+            <dt>Membro desde</dt>
+            <dd data-profile-created>-</dd>
+          </div>
+        </dl>
+
+        <div class="perfil-estatisticas" aria-label="Estatisticas do perfil">
+          <div>
+            <strong data-profile-books>0</strong>
+            <span>Livros</span>
+          </div>
+          <div>
+            <strong data-profile-wishes>0</strong>
+            <span>Desejos</span>
+          </div>
+          <div>
+            <strong data-profile-trades>0</strong>
+            <span>Trocas</span>
+          </div>
+        </div>
+      </aside>
+
+      <section class="perfil-painel">
+        <div class="perfil-painel__cabecalho">
+          <div>
+            <p class="rotulo">Conta</p>
+            <h2>Informacoes pessoais</h2>
+          </div>
+          <label class="perfil-upload">
+            <input type="file" accept="image/png,image/jpeg,image/webp" data-profile-photo-input>
+            <span data-profile-photo-label>Escolher foto</span>
+          </label>
+        </div>
+
+        <form data-profile-form>
+          <div class="grade-formulario">
+            <div class="campo ocupa-2">
+              <label for="perfil-nome">Nome</label>
+              <input id="perfil-nome" name="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="campo ocupa-2">
+              <label for="perfil-email">Email</label>
+              <input id="perfil-email" name="email" type="email" placeholder="nome@exemplo.com" required>
+            </div>
+            <div class="campo">
+              <label for="perfil-cidade">Cidade</label>
+              <input id="perfil-cidade" name="cidade" placeholder="Lages" required>
+            </div>
+            <div class="campo">
+              <label for="perfil-estado">Estado</label>
+              <input id="perfil-estado" name="estado" placeholder="SC" maxlength="2" required>
+            </div>
+          </div>
+          <div class="perfil-acoes">
+            <button class="botao botao--vazado" type="button" data-remove-profile-photo>Remover foto</button>
+            <button class="botao" type="submit">Salvar perfil</button>
+          </div>
+          <p class="mensagem-status" data-profile-message></p>
+        </form>
+      </section>
+
+      <section id="configuracoes" class="perfil-painel perfil-painel--senha">
+        <div class="perfil-painel__cabecalho">
+          <div>
+            <p class="rotulo">Seguranca</p>
+            <h2>Alterar senha</h2>
+          </div>
+        </div>
+
+        <form data-password-form>
+          <div class="grade-formulario">
+            <div class="campo ocupa-2">
+              <label for="senha-atual">Senha atual</label>
+              <input id="senha-atual" name="senhaAtual" type="password" placeholder="********" required>
+            </div>
+            <div class="campo">
+              <label for="nova-senha">Nova senha</label>
+              <input id="nova-senha" name="novaSenha" type="password" placeholder="Minimo de 6 caracteres" required>
+            </div>
+            <div class="campo">
+              <label for="confirmar-senha">Confirmar senha</label>
+              <input id="confirmar-senha" name="confirmarSenha" type="password" placeholder="Repita a nova senha" required>
+            </div>
+          </div>
+          <div class="perfil-acoes perfil-acoes--direita">
+            <button class="botao" type="submit">Atualizar senha</button>
+          </div>
+          <p class="mensagem-status" data-password-message></p>
+        </form>
+      </section>
+
+      <section class="perfil-painel perfil-painel--perigo">
+        <div class="perfil-painel__cabecalho">
+          <div>
+            <h2>Excluir conta</h2>
+          </div>
+        </div>
+        <p class="texto-suave">Ao excluir sua conta, seus livros, desejos, trocas e mensagens vinculadas tambem serao removidos.</p>
+        <div class="perfil-acoes perfil-acoes--direita">
+          <button class="botao botao--perigo" type="button" data-delete-account>Excluir conta</button>
+        </div>
+        <p class="mensagem-status" data-delete-account-message></p>
+      </section>
+    </section>
+  </main>
+
+  <div data-shell="navegacao-inferior"></div>
+  <script src="js/api.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

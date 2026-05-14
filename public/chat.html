@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookSwap | Chat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="chat">
+  <div data-shell="header"></div>
+
+  <main class="pagina chat-pagina">
+    <section class="resumo-chat" data-resumo-chat></section>
+    <section class="lista-mensagens" data-lista-mensagens></section>
+    <form class="formulario-chat" data-formulario-chat>
+      <input name="conteudo" placeholder="Escreva sua mensagem..." autocomplete="off">
+      <button class="botao-enviar" type="submit" aria-label="Enviar">&rarr;</button>
+    </form>
+  </main>
+
+  <div data-shell="navegacao-inferior"></div>
+  <script src="js/api.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>
+
+
+

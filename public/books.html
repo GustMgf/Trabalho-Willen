@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookSwap | Livros</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="books">
+  <div data-shell="header"></div>
+
+  <main class="pagina pagina--larga">
+    <section class="cabecalho-pagina cabecalho-pagina--centralizado">
+      <p class="rotulo">BookSwap editorial</p>
+      <h1 class="titulo-destaque">Livros</h1>
+      <p class="rotulo" data-books-count>Carregando acervo</p>
+      <div class="linha"></div>
+    </section>
+
+    <section class="grade-livros grade-livros--tres" data-books-grid></section>
+  </main>
+
+  <div data-shell="navegacao-inferior"></div>
+  <script src="js/api.js"></script>
+  <script src="js/books.js"></script>
+</body>
+</html>
+
+
+

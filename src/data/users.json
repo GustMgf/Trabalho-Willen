@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Gustavo",
+    "email": "gustavo@email.com",
+    "password": "123456",
+    "city": "Lages",
+    "state": "SC"
+  },
+  {
+    "id": 2,
+    "name": "Ana",
+    "email": "ana@email.com",
+    "password": "123456",
+    "city": "Florianopolis",
+    "state": "SC"
+  },
+  {
+    "id": 3,
+    "name": "Marina",
+    "email": "marina@email.com",
+    "password": "123456",
+    "city": "Curitiba",
+    "state": "PR"
+  },
+  {
+    "id": 4,
+    "name": "Gustavo",
+    "email": "teste@email.com",
+    "password": "123456",
+    "city": "Lages",
+    "state": "SC"
+  },
+  {
+    "id": 5,
+    "name": "Gustavo",
+    "email": "gustavo.silva.trabalhos@gmail.com",
+    "password": "Amora4567",
+    "city": "Lages",
+    "state": "SC"
+  }
+]

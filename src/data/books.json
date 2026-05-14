@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "title": "O Hobbit",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasia",
+    "condition": "Bom",
+    "description": "Livro bem conservado",
+    "status": "available"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "title": "Harry Potter",
+    "author": "J.K. Rowling",
+    "genre": "Fantasia",
+    "condition": "Muito bom",
+    "description": "Primeiro livro da serie em otimo estado",
+    "status": "available"
+  },
+  {
+    "id": 3,
+    "userId": 3,
+    "title": "Dom Casmurro",
+    "author": "Machado de Assis",
+    "genre": "Literatura brasileira",
+    "condition": "Usado",
+    "description": "Edicao de bolso com pequenas marcas de uso",
+    "status": "available"
+  },
+  {
+    "id": 4,
+    "userId": 2,
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "Distopia",
+    "condition": "Bom",
+    "description": "Livro com algumas anotacoes a lapis",
+    "status": "available"
+  },
+  {
+    "id": 5,
+    "userId": 4,
+    "title": "O Hobbit",
+    "author": "Tolkien",
+    "genre": "Fantasia",
+    "condition": "Bom",
+    "description": "Livro top",
+    "status": "exchanged"
+  },
+  {
+    "id": 6,
+    "userId": 5,
+    "title": "Teste",
+    "author": "teste",
+    "genre": "Fantasia",
+    "condition": "Bom",
+    "description": "testeeeee",
+    "status": "exchanged"
+  },
+  {
+    "id": 7,
+    "userId": 5,
+    "title": "tes",
+    "author": "testeeee",
+    "genre": "Ficcao contemporanea",
+    "condition": "Otimo",
+    "description": "testreeqwewqe",
+    "status": "reserved"
+  },
+  {
+    "id": 8,
+    "userId": 5,
+    "title": "testeee",
+    "author": "testeeee",
+    "genre": "Distopia",
+    "condition": "Bom",
+    "description": "testeeee",
+    "status": "exchanged",
+    "coverImage": "img/uploads/book-8-1777559786161.jpg"
+  }
+]

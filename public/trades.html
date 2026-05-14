@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookSwap | Trocas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="trades">
+  <div data-shell="header"></div>
+
+  <main class="pagina pagina--larga">
+    <section class="cabecalho-pagina">
+      <p class="rotulo">BookSwap</p>
+      <h1 class="titulo-destaque">Histórico</h1>
+      <p class="rotulo" data-trades-count>Carregando trocas</p>
+      <div class="linha"></div>
+    </section>
+
+    <section class="lista-trocas" data-trades-list></section>
+  </main>
+
+  <div data-shell="navegacao-inferior"></div>
+  <script src="js/api.js"></script>
+  <script src="js/trades.js"></script>
+</body>
+</html>
+
+
+

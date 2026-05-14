@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookSwap | Explorar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="explore">
+  <div data-shell="header"></div>
+
+  <main class="pagina pagina--larga">
+    <section class="destaque-editorial" style="min-height: auto;">
+      <div class="destaque-editorial__texto">
+        <p class="rotulo">Sugestoes para voce</p>
+        <h1 class="titulo-destaque">Explorar</h1>
+        <p class="texto-suave">Procure por titulo, autor, genero ou estado de conservacao.</p>
+      </div>
+    </section>
+
+    <div class="barra-ferramentas">
+      <div>
+        <label class="rotulo-formulario" for="busca-livro">Procurar no acervo</label>
+        <input id="busca-livro" class="campo-busca" data-book-search placeholder="Titulo, autor ou genero...">
+      </div>
+      <a class="botao botao--vazado" href="wanted-books.html">Cadastrar desejo</a>
+    </div>
+
+    <section class="grade-livros grade-livros--tres" data-explore-grid></section>
+  </main>
+
+  <div data-shell="navegacao-inferior"></div>
+  <script src="js/api.js"></script>
+  <script src="js/books.js"></script>
+</body>
+</html>
+
+
+
